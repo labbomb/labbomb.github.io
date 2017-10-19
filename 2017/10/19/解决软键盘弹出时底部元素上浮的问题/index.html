@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？ 元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&amp;#123;    position:fixed;    bottom:0;">
+<meta name="description" content="在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&amp;#123;    position:fixed;    bottom:0;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决软键盘弹出时底部元素上浮的问题">
 <meta property="og:url" content="http://yoursite.com/2017/10/19/解决软键盘弹出时底部元素上浮的问题/index.html">
 <meta property="og:site_name" content="Labbomb&#39;s Blog">
-<meta property="og:description" content="在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？ 元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&amp;#123;    position:fixed;    bottom:0;">
-<meta property="og:updated_time" content="2017-10-19T07:10:30.255Z">
+<meta property="og:description" content="在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&amp;#123;    position:fixed;    bottom:0;">
+<meta property="og:updated_time" content="2017-10-19T07:31:51.374Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决软键盘弹出时底部元素上浮的问题">
-<meta name="twitter:description" content="在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？ 元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&amp;#123;    position:fixed;    bottom:0;">
+<meta name="twitter:description" content="在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&amp;#123;    position:fixed;    bottom:0;">
 
 
 
@@ -407,10 +407,9 @@
       
 
       
-        <p>在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。<br>可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。<br>那么该如何解决？</p>
-<p>元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.demo&#123;</div><div class="line">    position:fixed;</div><div class="line">    bottom:<span class="number">0</span>;</div><div class="line">    height:<span class="number">50</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+        <p>在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？<br>元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.demo&#123;</div><div class="line">    position:fixed;</div><div class="line">    bottom:<span class="number">0</span>;</div><div class="line">    height:<span class="number">50</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>这个时候呼出软键盘，就会发现底部元素的位置上去了，看起来就是在软键盘的上面。这是因为元素是基于bottom值进行定位的<br>既然bottom值会使元素上浮，但是我们又希望元素固定在底部。此时，不妨可以使用逆向的方式，也就是设置top值来解决问题。</p>
+<p>这个时候呼出软键盘，就会发现底部元素的位置上去了，看起来就是在软键盘的上面，这是因为元素是基于bottom值进行定位的<br>既然bottom值会使元素上浮，但是我们又希望元素固定在底部。此时，不妨可以使用逆向的方式，也就是设置top值来解决问题</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var demoHeight = document.querySelector(<span class="string">'.demo'</span>);</div><div class="line">demoHeight.style.top = document.documentElement.clientHeight - <span class="number">50</span> + <span class="string">'px'</span>;</div></pre></td></tr></table></figure>
 <p>这样就可以解决软键盘弹出时底部元素上浮的问题了</p>
 

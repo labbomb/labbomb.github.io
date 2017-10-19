@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[解决软键盘弹出时底部元素上浮的问题]]></title>
     <url>%2F2017%2F10%2F19%2F%E8%A7%A3%E5%86%B3%E8%BD%AF%E9%94%AE%E7%9B%98%E5%BC%B9%E5%87%BA%E6%97%B6%E5%BA%95%E9%83%A8%E5%85%83%E7%B4%A0%E4%B8%8A%E6%B5%AE%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？ 元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&#123; position:fixed; bottom:0; height:50;&#125; 这个时候呼出软键盘，就会发现底部元素的位置上去了，看起来就是在软键盘的上面。这是因为元素是基于bottom值进行定位的既然bottom值会使元素上浮，但是我们又希望元素固定在底部。此时，不妨可以使用逆向的方式，也就是设置top值来解决问题。 12var demoHeight = document.querySelector('.demo');demoHeight.style.top = document.documentElement.clientHeight - 50 + 'px'; 这样就可以解决软键盘弹出时底部元素上浮的问题了]]></content>
+    <content type="text"><![CDATA[在html5plus环境下，当html中存在固定在底部的元素时，此时弹出软键盘的话，底部的元素也会被弹上来。可能这个时候整个页面的布局就会乱掉，达不到想要的预期效果，这样给用户的体验也不太理想。那么该如何解决？元素之所以会上浮，是因为通常我们都是设置元素的属性值(这里用demo举例)并使其固定在底部。12345.demo&#123; position:fixed; bottom:0; height:50;&#125; 这个时候呼出软键盘，就会发现底部元素的位置上去了，看起来就是在软键盘的上面，这是因为元素是基于bottom值进行定位的既然bottom值会使元素上浮，但是我们又希望元素固定在底部。此时，不妨可以使用逆向的方式，也就是设置top值来解决问题 12var demoHeight = document.querySelector('.demo');demoHeight.style.top = document.documentElement.clientHeight - 50 + 'px'; 这样就可以解决软键盘弹出时底部元素上浮的问题了]]></content>
       <categories>
         <category>前端</category>
       </categories>
